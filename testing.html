@@ -15,9 +15,11 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">
-        <img src="images/1470260589577.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> Welldonelasagna
+        <img src="images/1470260589577.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Welldonelasagna
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars5" aria-controls="navbars5" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars5" aria-controls="navbars5"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -59,7 +61,8 @@
             <hr>
             <!--Progressbar/75%/dangercolour-->
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">Loading... 75%</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">Loading... 75%</div>
             </div>
 
             <hr>
@@ -71,19 +74,24 @@
                 </button>
                 <!--the green button/enabled-->
                 <button class="btn btn-primary" type="button">
-                    <span class="spinner-border text-success spinner-border-sm" role="status" aria-hidden="true"></span> Loading...
+                    <span class="spinner-border text-success spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
                 </button>
             </div>
 
             <hr>
 
+            <?php
+include 'serverstatus.php';
+?>
             <div class="card">
                 <div class="card-header">
                     Server status
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Minecraft Matas server:</h5>
-                    <a href="#" class="btn btn-primary">Check now</a>
+                    <form method="POST" action=''>
+                        <h5 class="card-title">Minecraft Matas server:</h5>
+                        <input type="submit" value="PHP check now" name="servercheck" class="btn btn-primary" />
                 </div>
             </div>
 
@@ -92,7 +100,8 @@
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <h1 class="display-4">Fluid jumbotron</h1>
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
+                        parent.</p>
                 </div>
             </div>
 
@@ -106,7 +115,8 @@
             </div>
 
             <!-- Modal popup thats vertically alinged -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -129,7 +139,15 @@
             <hr>
             <!--The 404 button-->
             <div class="col text-center">
-                <a href="404.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Show 404 page</a>
+                <a href="404.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Show 404
+                    page</a>
+            </div>
+
+            <hr>
+            <!--The php button-->
+            <div class="col text-center">
+                <a href="serverstatus.php" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Show
+                    php page</a>
             </div>
 
             <hr>
@@ -145,7 +163,8 @@
     <!-- Footer -->
     <footer class="footer mt-auto py-3">
         <div class="container">
-            <span class="text-muted">Copyright &copy; welldonelasagna.com, 2019 | Tariq Dinmohamed | <a href="http://welldonelasagna.com/">welldonelasagna.com</a></span>
+            <span class="text-muted">Copyright &copy; welldonelasagna.com, 2019 | Tariq Dinmohamed | <a
+                    href="http://welldonelasagna.com/">welldonelasagna.com</a></span>
         </div>
     </footer>
 
