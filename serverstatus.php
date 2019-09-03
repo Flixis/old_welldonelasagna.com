@@ -1,20 +1,10 @@
-<?php
-print("this page functions");
-echo"<br>";
-echo"<br>";
+<form action="serverstatus.php" method="post">
+    <input type="submit" name="servercheck" value="Update status" />
+</form>
+<br>
 
-$host = '172.217.168.206'; 
-$port = 80; 
-$waitTimeoutInSeconds = 1;
-if(isset($_POST['servercheck'])){
-   if($fp = fsockopen($host,$port,$errCode,$errStr,$waitTimeoutInSeconds)){   
-      // It worked
-      print("it worked");
-   } else {
-      // It didn't work 
-      print("it didn't work");
-   } 
-}
-fclose($fp);
+
+<?php
+
 
 ?>
